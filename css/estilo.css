@@ -27,12 +27,25 @@ footer, header, hgroup, menu, nav, section {
 header, nav, section, article, footer{
     border-radius: 10px;
     padding: 15px;
-    border: solid 2px black;
+    /* border: solid 2px black; */
     margin-top: 10px;
 
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+div.contenedor{
+    width: 90%;
+    margin: auto;
+}
+header{
+    text-shadow: 1px 1px 1px #e3e3e1;
+    -moz-box-shadow: 0px 6px 0 #efefee;
+    -webkit-box-shadow: 0px 6px 0 #d9dad6;
+
+    background: -moz-linear-gradient(center top, #ffffff, #e5e8e8 100%) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #e0e3e3));
 }
 
 header h1{
@@ -48,19 +61,295 @@ header h1{
 div.logo{
     font: bold;
     font-size: 2.5em;
-    margin-top: 3%;
+    margin-top: -2.5%;
     float: left;
-    margin-top: -10px;
+    /* margin-top: -30px; */
 }
 
-header nav{
+header div.menu{
     display: flex;
     height: 100%;
-    width: 60%;
-    margin-left: 280px;
+    width: 75%;
+    margin-left: 300px;
 }
 header li{
-    padding-right: 70px;
+    padding-right: 60px;
     display: inline-block;
-    margin-left: 70px;
+    margin-left: 20px;
+    font-size: 10px;
+}
+header div a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font:'caviar_dreamsregular', bold;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    /* text-shadow: 1px 1px 1px #fffffb;
+    -moz-box-shadow: 0px 6px 0 #000000;
+    -webkit-box-shadow: 0px 6px 0 #b2b2b2; */
+
+    background: -moz-linear-gradient(center top, #d2d2d2, #cecece 100%) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bababa), color-stop(100%, #d9d9d9));
+}
+section img{
+    /* width: 50%; */
+    height: 350px;
+    border-radius: 10px;
+    margin-left: 28px;
+    /* margin-right: auto; */
+}
+section.servicios{
+    display: inline-block;
+    margin-top: 10px;
+}
+section.servicios ul{
+    display: flex;
+    justify-content: space-around;
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font:'caviar_dreamsregular', bold;
+}
+section.destacados{
+    display: inline-block;
+}
+nav.image1{
+    /* background-color: aliceblue; */
+    width: 23%;
+    height: 350px;
+    display: inline-block;
+    margin-left: 15px;
+
+background: -moz-linear-gradient(center top, #e8ebeb, #f1f1f1 100%) repeat scroll 0 0 transparent;
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #e5e8e8));
+
+
+/* sombreados */
+text-shadow: 1px 1px 1px #bfbfbf;
+-moz-box-shadow: 0px 6px 0 #ffffff;
+-webkit-box-shadow: 0px 6px 0 #d3d2d2;
+
+}
+nav.image1 img{
+    height: 230px;
+    margin-left: 6px;
+}
+nav.image1 h3{
+    margin-left: 5px;
+}
+button.botones{
+    background-color: black;
+    color: aliceblue;
+    /* display: inline-flex; */
+    margin-top: 10px;
+}
+nav.image1:hover{
+    margin-top: -0.1px;
+
+    -webkit-transition-delay: 0.1s;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-property: all;
+
+
+    background: -moz-linear-gradient(center top, #e9efec 0%, #ffffff 100%) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #7a7a7a));
+    -moz-box-shadow: 0px 6px 0 #ffffff;
+    -webkit-box-shadow: 0px 6px 0 #d3d2d2;
+
+}
+
+nav.image2{
+    /* background-color: aliceblue; */
+    width: 23%;
+    height: 350px;
+    display: inline-block;
+    margin-left: 15px;
+
+background: -moz-linear-gradient(center top, #e8ebeb, #f1f1f1 100%) repeat scroll 0 0 transparent;
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #e5e8e8));
+
+
+/* sombreados */
+text-shadow: 1px 1px 1px #bfbfbf;
+-moz-box-shadow: 0px 6px 0 #ffffff;
+-webkit-box-shadow: 0px 6px 0 #d3d2d2;
+
+}
+nav.image2 img{
+    height: 230px;
+    margin-left: 6px;
+}
+nav.image2 h3{
+    margin-left: 5px;
+}
+button.botones{
+    background-color: black;
+    color: aliceblue;
+    display: inline-flex;
+    margin-top: 10px;
+}
+nav.image2:hover{
+    margin-top: -0.1px;
+
+    -webkit-transition-delay: 0.1s;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-property: all;
+
+
+    background: -moz-linear-gradient(center top, #e9efec 0%, #ffffff 100%) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #7a7a7a));
+    -moz-box-shadow: 0px 6px 0 #ffffff;
+    -webkit-box-shadow: 0px 6px 0 #d3d2d2;
+
+}
+
+nav.image3{
+    /* background-color: aliceblue; */
+    width: 23%;
+    height: 350px;
+    display: inline-block;
+    margin-left: 15px;
+
+background: -moz-linear-gradient(center top, #e8ebeb, #f1f1f1 100%) repeat scroll 0 0 transparent;
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #e5e8e8));
+
+
+/* sombreados */
+text-shadow: 1px 1px 1px #bfbfbf;
+-moz-box-shadow: 0px 6px 0 #ffffff;
+-webkit-box-shadow: 0px 6px 0 #d3d2d2;
+
+}
+nav.image3 img{
+    height: 230px;
+    margin-left: 6px;
+}
+nav.image3 h3{
+    margin-left: 5px;
+}
+button.botones{
+    background-color: black;
+    color: aliceblue;
+    display: inline-flex;
+    margin-top: 10px;
+}
+nav.image3:hover{
+    margin-top: -0.1px;
+
+    -webkit-transition-delay: 0.1s;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-property: all;
+
+
+    background: -moz-linear-gradient(center top, #e9efec 0%, #ffffff 100%) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #7a7a7a));
+    -moz-box-shadow: 0px 6px 0 #ffffff;
+    -webkit-box-shadow: 0px 6px 0 #d3d2d2;
+
+}
+
+nav.image4{
+    /* background-color: aliceblue; */
+    width: 23%;
+    height: 350px;
+    display: inline-block;
+    margin-left: 15px;
+
+background: -moz-linear-gradient(center top, #e8ebeb, #f1f1f1 100%) repeat scroll 0 0 transparent;
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #e5e8e8));
+
+
+/* sombreados */
+text-shadow: 1px 1px 1px #bfbfbf;
+-moz-box-shadow: 0px 6px 0 #ffffff;
+-webkit-box-shadow: 0px 6px 0 #d3d2d2;
+
+}
+nav.image4 img{
+    height: 230px;
+    margin-left: 6px;
+}
+nav.image4 h3{
+    margin-left: 5px;
+}
+button.botones{
+    background-color: black;
+    color: aliceblue;
+    display: inline-flex;
+    margin-top: 10px;
+}
+nav.image4:hover{
+    margin-top: -0.1px;
+
+    -webkit-transition-delay: 0.1s;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-property: all;
+
+
+    background: -moz-linear-gradient(center top, #e9efec 0%, #ffffff 100%) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #7a7a7a));
+    -moz-box-shadow: 0px 6px 0 #ffffff;
+    -webkit-box-shadow: 0px 6px 0 #d3d2d2;
+
+}
+
+
+footer{
+    text-shadow: 1px 1px 1px #e3e3e1;
+    -moz-box-shadow: 0px 6px 0 #efefee;
+    -webkit-box-shadow: 0px 6px 0 #d9dad6;
+
+    background: -moz-linear-gradient(center top, #ffffff, #e5e8e8 100%) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c8c7c7), color-stop(100%, #ffffff));
+}
+nav.redes{
+    width: 100%;
+    display: inline-block;
+    justify-content: space-around;
+    margin-top: 10px;
+    display: flex;
+}
+
+nav.opciones{
+    width: 80%;
+    display: inline-block;
+    justify-content: space-around;
+    display: flex;
+    margin-top: -12px;
+}
+nav.opciones p{
+    font-size: 13px;
+    font-weight: normal;
+}
+@media only screen and (max-width: 480px) {
+    div.contenedor{
+        width: 100%;
+    }
+    header, nav, section, article, footer{
+        width: 90%;
+        float: left;
+        margin-left: 2px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    header{
+        height: 100px;
+    }
+    footer{
+        height: 400px;
+    }
+    h1{
+        font-size: 1px;
+    }
+    div.logo h1{
+        font-size: 30px;
+        margin-top: 20px;
+    }
 }
